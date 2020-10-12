@@ -4,6 +4,10 @@
 	</title>
 </svelte:head>
 
-<h1>คอนโดนใกล้รถไฟฟ้า</h1>
+<script lang="ts">
+    import Step from "../components/Step.svelte";
+</script>
 
-<p>...</p>
+<h1>🚅 คอนโดใกล้รถไฟฟ้า BTS สายสีเขียว</h1>
+
+<p class="overflow-x-auto"><Step/></p>
