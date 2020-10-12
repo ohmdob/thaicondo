@@ -1,41 +1,31 @@
 <script lang="ts">
 	export let segment: string;
 	export let active: boolean = false;
+	import Icon from 'svelte-awesome/components/Icon.svelte';
+    import { facebook, phone } from 'svelte-awesome/icons';
 </script>
-
-<style>
-	.selected {
-		position: relative;
-		display: inline-block;
-	}
-	.selected::after {
-		position: absolute;
-		content: '';
-		width: calc(100% - 0.1em);
-		height: 2px;
-		background-color: #dd6b20;
-		display: block;
-		bottom: -1px;
-	}
-	.active{
-        display: block;
-    }    
-</style>
 
 <nav class="flex justify-between flex-wrap bg-gray-900 text-white p-2 mb-5">
 
 	<div class="flex items-center ">
 		<img alt="logo" class="h-20 p-2" 
-		src="tcd.png" /> ThaiCondo.in.th
+		src="tcd.png" />
+		<div class="flex flex-col">
+			<div class="flex flex-row p-1">ThaiCondo.in.th</div>
+			<div class="flex flex-row p-1">
+				<Icon class="bg-blue-500 p-1 w-8 h-8" data={facebook}/><a href="https://www.facebook.com/thaicondo.in.th" target="_blank" class="p-1">thaicondo.in.th</a>
+				<Icon class="bg-orange-500 p-1 w-8 h-8" data={phone}/><a href="tel:0997874156" class="p-1">0997874156</a>
+			</div>
+		</div>
 	</div>
-  
 
 	<div class="flex">
 		<ul class={`${active? '' : 'hidden'} md:flex w-full items-center `}>
 			<li class="pr-5"><a class='block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-orange-600 mr-4 {segment === undefined ? "selected" : ""}' href='.'>Home</a></li>
-			<li class="pr-5"><a class='block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-orange-600 mr-4 {segment === "about" ? "selected" : ""}' href='about'>About</a></li>
-			<li class="pr-5"><a rel=prefetch class='block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-orange-600 mr-4 {segment === "blog" ? "selected" : ""}' href='blog'>Blogs</a></li>
-			<li><a class='block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-orange-600 mr-4 {segment === "bakery" ? "selected" : ""}' href='bakery'>Bakery</a></li>
+			<li class="pr-5"><a class='block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-orange-600 mr-4 {segment === "promotion" ? "selected" : ""}' href='promotion'>โปรโมชั่น</a></li>
+			<li class="pr-5"><a class='block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-orange-600 mr-4 {segment === "bts_mrt" ? "selected" : ""}' href='bts_mrt'>คอนโดใกล้รถไฟฟ้า</a></li>
+			<li class="pr-5"><a class='block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-orange-600 mr-4 {segment === "news" ? "selected" : ""}' href='news'>ข่าวสารอสังหา</a></li>
+			<li class="pr-5"><a class='block mt-4 lg:inline-block lg:mt-0 text-black-200 hover:text-orange-600 mr-4 {segment === "contact" ? "selected" : ""}' href='contact'>ติดต่อเรา</a></li>
 		</ul>
 		<div class="flex">
 			<button on:click={() => active = !active } class="md:hidden h-12 flex items-center px-3 mt-2 border rounded text-black-200 border-black-400 hover:text-orange-600 hover:border-orange-400">
@@ -44,7 +34,4 @@
 		</div>
 	</div>
 
-
-	<!-- <div class="flex w-full border-t-4 border-teal-500 rounded-b"></div> -->
-  
   </nav>

@@ -1,4 +1,8 @@
-
+<svelte:head>
+	<title>
+		Home | ให้ความรู้เกี่ยวกับอสังหาริมทรัพย์ แนะนำโปรโมชั่นคอนโด, ทำเล, การลงทุนต่างๆ
+	</title>
+</svelte:head>
 
 <div class="p-4">
 	<div class="flex  p-1 text-center justify-center">
