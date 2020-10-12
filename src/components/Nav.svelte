@@ -7,15 +7,14 @@
 
 <nav class="flex justify-between flex-wrap bg-gray-900 text-white p-2 mb-5">
 
-	<div class="flex items-center ">
-		<img alt="logo" class="h-20 p-2" 
-		src="tcd.png" />
-		<div class="flex flex-col">
-			<div class="flex flex-row p-1">ThaiCondo.in.th</div>
-			<div class="flex flex-row p-1">
-				<Icon class="bg-blue-500 p-1 w-8 h-8" data={facebook}/><a href="https://www.facebook.com/thaicondo.in.th" target="_blank" class="p-1">thaicondo.in.th</a>
-				<Icon class="bg-orange-500 p-1 w-8 h-8" data={phone}/><a href="tel:0997874156" class="p-1">0997874156</a>
-			</div>
+	<div class="flex items-center">
+		<div class="flex flex-col items-center">
+			<img alt="logo" class="h-16" 
+			src="tcd.png" />Thaicondo
+		</div>
+		<div class="flex flex-col px-3">
+			<div class="p-1"><Icon class="bg-blue-500 p-1 w-8 h-8" data={facebook}/><a href="https://www.facebook.com/thaicondo.in.th" target="_blank" class="p-1">thaicondo.in.th</a></div>
+			<div class="p-1"><Icon class="bg-orange-500 p-1 w-8 h-8" data={phone}/><a href="tel:0997874156" class="p-1">0997874156</a></div>
 		</div>
 	</div>
 
