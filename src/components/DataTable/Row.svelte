@@ -29,7 +29,7 @@
     .get();
 
   function columnClass(column) {
-    const cb = new ClassBuilder('relative p-3 font-normal text-right');
+    const cb = new ClassBuilder('relative p-3 font-normal');
     if (column.replace) {
       cb.replace(column.replace)
     }

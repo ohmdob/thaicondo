@@ -3,7 +3,7 @@
   import { createEventDispatcher } from "svelte";
   import Icon from "../Icon";
 
-  const classesDefault = "capitalize duration-100 text-gray-600 text-xs hover:text-black dark-hover:text-white p-3 font-normal text-right";
+  const classesDefault = "capitalize duration-100 text-gray-600 text-xs hover:text-black dark-hover:text-white p-3 font-normal";
 
 
   export let classes = classesDefault;
@@ -25,7 +25,7 @@
     .get();
 
   function headerColumnClass(column) {
-    const cb = new ClassBuilder('sort-wrapper flex items-center justify-end');
+    const cb = new ClassBuilder('sort-wrapper flex items-center justify-center');
     if (column.headerReplace) {
       cb.replace(column.headerReplace)
     }
