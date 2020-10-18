@@ -1,13 +1,14 @@
 <svelte:head>
 	<title>
-		Home | ให้ความรู้เกี่ยวกับอสังหาริมทรัพย์ แนะนำโปรโมชั่นคอนโด, ทำเล, การลงทุนต่างๆ
+		รวมโปรโมชั่น | คอนโดสวย ราคาพิเศษ ของแถมมากมาย กับ Thaicondo
 	</title>
+	<!-- <meta name="keywords" content={tcd_post?.keywords} /> -->
 </svelte:head>
 <script context="module">
-	import { tcd_postAllQuery } from "../schema/tcd_post";
-  	import { client } from "./client";
+	import { tcd_postAllQuery } from "../../schema/tcd_post";
+  	import { client } from "../client";
 	export async function preload({ params, query }) {
-		const { data } = await client.query({query: tcd_postAllQuery, variables: {title: params.title} })
+		const { data } = await client.query({query: tcd_postAllQuery})
 		if(data.tcd_post.length > 0){
 			return { tcd_post: [ ...data.tcd_post ] };
 		}
@@ -16,8 +17,8 @@
 <script lang="ts">
     import Icon from 'svelte-awesome/components/Icon.svelte';
     import { link } from 'svelte-awesome/icons';
-	import Carousel from '../components/Carousel.svelte';
-    import Card from "../components/Card";
+	import Carousel from '../../components/Carousel.svelte';
+    import Card from "../../components/Card";
 	export let tcd_post
 </script>
 <div class="">

@@ -29,7 +29,7 @@
   export let asc = false;
   export let loading = false;
   export let hideProgress = false;
-  export let editable = true;
+  export let editable = false;
   export let sortable = true;
   export let pagination = true;
   export let scrollToTop = false;
