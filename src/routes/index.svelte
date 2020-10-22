@@ -16,13 +16,15 @@
 <script lang="ts">
     import Icon from 'svelte-awesome/components/Icon.svelte';
     import { link } from 'svelte-awesome/icons';
-	import Carousel from '../components/Carousel.svelte';
+    import Carousel from '../components/Carousel.svelte';
+    import MainTag from "../components/MainTag.svelte";
     import Card from "../components/Card";
 	export let tcd_post
 </script>
-<div class="">
+<div>
+<MainTag href="/promotion" tagname="โปรโมชั่น" />
 {#each tcd_post as { title, project, units, commons, tcd_tag_post_ref }, i}
-<div class="flex max-w-5xl mx-auto bg-gray-800">
+<div class="flex max-w-5xl mx-auto bg-gray-800 pb-4">
     <div class="w-full md:w-6/12">
         <Card.Card class={'w-full bg-white'}>
             <div class="flex justify-between p-2 bg-gray-900 text-white">{title}<a href={`/promotion/${title.replace(/ /g, '-')}`}><Icon class="bg-gray-500 rounded-full p-1 w-8 h-8" data={link}/></a></div>
@@ -55,4 +57,5 @@
     </div>
 </div>
 {/each}
+<MainTag href="/news" tagname="ข่าวสารอสังหา" />
 </div>

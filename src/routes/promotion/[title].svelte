@@ -20,7 +20,7 @@
 	import GoogleMap from '../../components/GoogleMap.svelte';
 	export let tcd_post
 </script>
-<div class="bg-white max-w-5xl mx-auto p-10">
+<div class="bg-white max-w-5xl mx-auto p-8">
 	{#if !tcd_post}
 	<h1 class="font-medium text-xl md:text-2xl md:mr-4 text-gray-700">404 ไม่พบข้อมูล</h1>
 	{/if}

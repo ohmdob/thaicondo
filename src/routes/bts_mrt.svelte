@@ -7,7 +7,7 @@
 <script lang="ts">
     import Step from "../components/Step.svelte";
 </script>
-<div class="bg-white max-w-5xl mx-auto p-10">
+<div class="bg-white max-w-5xl mx-auto p-8">
 	<h1>🚅 คอนโดใกล้รถไฟฟ้า BTS สายสีเขียว</h1>
 
 	<p class="overflow-x-auto"><Step/></p>

@@ -21,7 +21,7 @@
     import Card from "../../components/Card";
 	export let tcd_post
 </script>
-<div class="">
+<div>
 {#each tcd_post as { title, project, units, commons, tcd_tag_post_ref }, i}
 <div class="flex max-w-5xl mx-auto bg-gray-800">
     <div class="w-full md:w-6/12">

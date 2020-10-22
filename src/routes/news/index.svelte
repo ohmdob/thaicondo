@@ -8,7 +8,7 @@
 		ข่าวสารอสังหา | 
 	</title>
 </svelte:head>
-<div class="bg-white max-w-5xl mx-auto p-10">
+<div class="bg-white max-w-5xl mx-auto p-8">
 	<h1>ข่าวสารอสังหา</h1>
 
 

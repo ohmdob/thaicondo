@@ -7,6 +7,6 @@
         class="object-contain m-2"
         style="width: 40px"
       />
-      © 2020 ThaiCondo.in.th
+      © 2020 Thaicondo.in.th
     </div>
     </footer>

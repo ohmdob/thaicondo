@@ -9,8 +9,8 @@
 
 	<div class="flex items-center">
 		<div class="flex flex-col items-center">
-			<img alt="logo" class="h-16" 
-			src="tcd.png" />Thaicondo
+			<a href="/"><img alt="logo" class="h-16" 
+			src="tcd.png" />Thaicondo</a>
 		</div>
 		<div class="flex flex-col px-3">
 			<div class="p-1"><Icon class="bg-blue-500 p-1 w-8 h-8" data={facebook}/><a href="https://www.facebook.com/thaicondo.in.th" target="_blank" class="p-1">thaicondo.in.th</a></div>

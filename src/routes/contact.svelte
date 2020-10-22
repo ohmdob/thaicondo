@@ -1,6 +1,6 @@
 <svelte:head>
 	<title>
-		ติดต่อเรา | Thaicoondo
+		ติดต่อเรา | Thaicondo
 	</title>
 </svelte:head>
 
@@ -21,7 +21,7 @@
         }
     
 </script>
-<div class="bg-white max-w-5xl mx-auto p-10">
+<div class="bg-white max-w-5xl mx-auto p-8">
     <h1>ติดต่อเรา</h1>
 
     <div class="flex p-6">
