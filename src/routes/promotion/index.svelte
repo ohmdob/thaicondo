@@ -26,7 +26,7 @@
 <div class="flex max-w-5xl mx-auto bg-gray-800">
     <div class="w-full md:w-6/12">
         <Card.Card class={'w-full bg-white'}>
-            <div class="flex justify-between p-2 bg-gray-900 text-white">{title}<a href={`/promotion/${title.replace(/ /g, '-')}`}><Icon class="bg-gray-500 rounded-full p-1 w-8 h-8" data={link}/></a></div>
+            <div class="flex justify-between p-2 bg-gray-900 text-white"><a class="hover:underline" href={`/promotion/${title.replace(/ /g, '-')}`}>{project}</a><a href={`/promotion/${title.replace(/ /g, '-')}`}><Icon class="bg-gray-500 rounded-full p-1 w-8 h-8" data={link}/></a></div>
             <div class="flex flex-row">
                 <div class="w-7/12 bg-white">
                 <Carousel>
