@@ -22,7 +22,7 @@
 	export let tcd_post
 </script>
 <div>
-<MainTag href="/promotion" tagname="โปรโมชั่น" />
+<!-- <MainTag href="/promotion" tagname="โปรโมชั่น" /> -->
 {#each tcd_post as { title, project, units, commons, tcd_tag_post_ref }, i}
 <div class="flex max-w-5xl mx-auto bg-gray-800 pb-4">
     <div class="w-full md:w-6/12">
@@ -57,5 +57,5 @@
     </div>
 </div>
 {/each}
-<MainTag href="/news" tagname="ข่าวสารอสังหา" />
+<!-- <MainTag href="/news" tagname="ข่าวสารอสังหา" /> -->
 </div>
